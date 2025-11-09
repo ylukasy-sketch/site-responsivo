@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "roboto", Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.logo-link {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+#conteudo-principal { 
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+}
+
+#conteudo-principal h3 { 
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.8em; 
+}
+
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.imagens figure {
+    flex: 1 1 250px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imagens figure img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.imagens p {
+    margin-top: 8px;
+    color: #555;
+    text-align: center;
+    width: 100%;
+}
+
+/* Menu celular */
+@media (max-width: 660px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+        display: flex; 
+        padding: 15px;
+    }
+
+    .logo {
+        flex-grow: 1; 
+        text-align: left;
+        margin-left: 0; 
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; 
+        gap: 0; 
+        margin-top: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 4px;
+        margin-bottom: 2px;
+        background-color: #333; 
+    }
+
+    .nav-links li a { 
+        display: block;
+        text-align: left; 
+        padding: 8px 12px; 
+        color: #ffffff;
+    }
+
+    .nav-links li a:hover {
+        background-color: #555;
+    }
+}
